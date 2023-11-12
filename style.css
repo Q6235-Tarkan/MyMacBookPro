@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --ff: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  height: 100%;
+  background-color: #efefef;
+}
+.card {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 0;
+  background-color: #efefef;
+}
+
+.card img {
+  height: 100%;
+  width: 50%;
+}
+.yazi {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 35px 40px;
+  background-color: #fff;
+  gap: 1.1rem;
+}
+.baslik {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.baslik h3 {
+  font-weight: 500;
+  margin-top: 3px;
+  font-size: 1.2rem;
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.spann {
+  background-color: #2175f5;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+.product {
+  padding: 10px 0;
+}
+
+.product h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+.product p {
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.storage {
+  margin-bottom: 10px 0;
+  padding: 10px;
+}
+.storage h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.buttons {
+  display: flex;
+  gap: 1rem;
+  padding: 8px 0 8px 0;
+}
+.buttons .btn {
+  height: 40px;
+  width: 80px;
+  background-color: gray;
+  font-weight: 600;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.buttons .btn:hover {
+  transform: scale(1.1);
+  background-color: #2175f5;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  margin-right: 10px;
+  align-items: flex-end;
+  padding-top: 1rem;
+}
+
+.price a {
+  text-decoration: none;
+  background-color: #2175f5;
+  color: white;
+  padding: 11px 16px;
+  border-radius: 10px;
+}
+.price i {
+  margin-right: 5px;
+}
+.price_dolar h1 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+/* media 
+@media (max-width: 1400px)
+@media (max-width: 1200px)
+@media (max-width: 992px)
+@media (max-width: 768px)
+@media (max-width: 576px)
+@media (max-width: 400px)
+*/
+
+@media screen and (max-width: 1400px) {
+  .container {
+    padding: 10rem;
+  }
+  .yazi {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.3);
+    padding-bottom: 3rem;
+  }
+
+  .baslik {
+    padding-top: 10rem;
+  }
+  .card {
+    padding: 0;
+  }
+  .price {
+    padding-bottom: 14rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    padding: 10rem 5rem;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  .container {
+    margin-top: 15px;
+    overflow: auto;
+  }
+  .card {
+    flex-direction: column;
+    box-shadow: none;
+  }
+  .yazi {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .card img {
+    width: 100%;
+  }
+  .baslik {
+    padding-top: 0;
+  }
+  .price {
+    padding-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+  .container h3 {
+    font-size: 1rem;
+  }
+  .yazi {
+    padding: 30px 15px;
+  }
+  .head h1 {
+    font-size: 1.4rem;
+  }
+  .product p {
+    font-size: 0.8rem;
+  }
+  .price a {
+    font-size: 0.7rem;
+    padding: 5px 0.5rem;
+  }
+
+  .price_dolar h1 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .price a i {
+    display: none;
+  }
+  .container {
+    margin-top: 10px;
+  }
+  .card {
+    margin-top: 40%;
+  }
+  .yazi {
+    height: 100vh;
+  }
+}
